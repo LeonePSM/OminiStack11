@@ -16,7 +16,7 @@ return (
         
             <Link className="back-link" to="/register">
                     < FiArrowLeft size = {16} color="E02041" />
-                        Não tenho Cadastro
+                        Já tenho Cadastro
                 </Link>
         </section>
 
