@@ -14,7 +14,7 @@ export default function Logon() {
                 <h1> Faça seu Logon </h1>
 
              <input placeholder = "Sua ID"/> 
-             <button className="button" type="submit">Entrar
+             <button className="button" type="submit" to="/profile">Entrar
              
              </button>
 
