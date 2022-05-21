@@ -10,7 +10,7 @@ return (
 <div className="new-incident-container">
     <div className="content">
         <section>
-            <img src={logo} alt="logoUT" />
+            <img style={{marginLeft:50}}src={logo} alt="logoUT" />
             <h1>Cadastrar novo caso</h1>
             <p>Descreva o caso detalhadamente para encontrar um herói para resolver isso.</p>
         
@@ -23,7 +23,7 @@ return (
         <form>
         <input placeholder="Título do caso" />
         <textarea placeholder="Descrição"/>
-        <input placeholde="Valor em Reais" />
+        <input placeholder="Valor em Reais" />
 
         
         <button type="submit" className="button"> Cadastrar </button>

@@ -9,7 +9,7 @@ export default function Logon() {
     return (
         <div className="logon-container">
             <section className="form">
-            <img src={logo} alt="logoUT" />
+            <img style={{marginLeft:60, marginTop:35}}src={logo} alt="logoUT" />
              <form>
                 <h1> Faça seu Logon </h1>
 
