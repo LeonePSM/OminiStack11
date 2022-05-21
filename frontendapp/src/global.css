@@ -69,3 +69,7 @@ form input{
 .back-link:hover{
     opacity: 0.8;
 }
+
+.img-capa {
+border-radius: 50%
+}

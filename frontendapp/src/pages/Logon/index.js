@@ -25,7 +25,7 @@ export default function Logon() {
              </form>
             </section>
            
-            <img src={capaUT} alt="Capa" />
+            <img className="img-capa" src={capaUT} alt="Capa" />
         </div>
     );
 }
