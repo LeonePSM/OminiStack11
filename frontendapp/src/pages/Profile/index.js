@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from "react";
 import './styles.css';
 import { FiPower, FiTrash2 } from 'react-icons/fi';
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 
 import logo from '../../assets/logo UT2.png';
 import api from "../../services/api";
 
 export default function Profile() {
   const [incidents, setIncidents] = useState ([]);
-  
+  const history = useNavigate();
   const ongId = localStorage.getItem('ongId');
   const ongName = localStorage.getItem('ongName');
 
@@ -34,8 +34,13 @@ export default function Profile() {
     } catch(err) {
       alert('Erro ao deletar caso, tente novamente');
     }
-
   }
+  
+      function handleLogout() {
+        localStorage.clear();
+        
+        history("/", { replace: true });
+      }
 
 return (
 <div className="profile-container">
@@ -44,7 +49,7 @@ return (
         <span>Bem vinda, {ongName}</span>
 
         <Link className="button" to = "/incidents/new">Cadastrar novo caso</Link>
-        <button type="button" > 
+        <button onClick={handleLogout} type="button" > 
         <FiPower size={18} color= "#e02041" />
         </button>
     </header>
